@@ -1,4 +1,4 @@
-# AIVance CEO 인사말
+# AIVance 문의하기 페이지
 
 ## 기능
 

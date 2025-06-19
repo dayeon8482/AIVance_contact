@@ -102,6 +102,7 @@ object-fit: contain;
 	font-size: 2rem;
 	background: none;
 	color: #fff;
+  border:none;
 	cursor: pointer;
 }
 /*메뉴 구현*/
@@ -115,9 +116,9 @@ object-fit: contain;
   justify-content: center;
 	position: relative;
 }
-.menu > li > a {
-	font-size: 1.4rem;
-  padding:5px 10px;
+.menu > li >p{
+ font-size: 1.4rem; 
+ padding:5px 10px;
 }
 .menu .submenu {
 	position: absolute;
@@ -142,25 +143,63 @@ font-weight: 100;
 .submenu  > li:hover{
   color: rgb(100, 121, 246);
 }
+@media (1200px >= width >768px){
+  .menu > li {
+  width:85px;
+}
+.menu > li >p{
+ font-size: 1.1rem; 
+ padding:5px 5px;
+}
+.menu .submenu {
+  width:85px;
+}
+.menu .submenu >li{
+font-size: 0.8rem;
+font-weight: 100;
+}
+}
 @media (max-width: 768px) {
-	.menu-toggle {
-		display: block;
-	}
-	.menu-wrap {
-		display: none;
-		width: 100%;
-	}
-	.menu-wrap.active {
-		display: block;
-	}
-	.menu-wrap ul {
-		flex-direction: column;
-		gap: 10px;
-	}
-	.menu-wrap ul.submenu {
-		position: static;
-		background: none;
-	}
+.top-bar{
+  height: 120px;
+  flex-direction: column;
+  justify-content: center;
+}
+ .menu > li {
+  width:85px;
+}
+.menu > li >p{
+ font-size: 1.1rem; 
+ padding:5px 5px;
+}
+.menu .submenu {
+  width:85px;
+}
+.menu .submenu >li{
+font-size: 0.8rem;
+font-weight: 100;
+}
+}
+@media (481px > width) {
+.top-bar{
+  height: 120px;
+  flex-direction: column;
+  justify-content: center;
+}
+ .menu > li {
+  width:60px;
+}
+.menu > li >p{
+ font-size: 0.8rem; 
+ padding:5px 5px;
+}
+.menu .submenu {
+  width:60px;
+}
+.menu .submenu >li{
+font-size: 0.55rem;
+font-weight: 100;
+}
 }
 /*인트로 섹션*/
 .intro-section {
@@ -184,6 +223,24 @@ font-weight: 100;
 	font-size: 2.5rem;
 	margin-top: 80px;
 }
+@media (768px > width > 480px){
+  .intro-section {
+  height: 350px;
+}
+.intro-section >.title {
+	font-size: 2rem;
+	margin-top: 120px;
+}
+}
+@media (480px >= width){
+  .intro-section {
+  height: 350px;
+}
+.intro-section >.title {
+	font-size: 1.6rem;
+	margin-top: 120px;
+}
+}
 /*contact-links-wrap*/
 .contact-links-wrap{
   background-color: #111;
@@ -197,9 +254,7 @@ font-weight: 100;
 }
 .contact-links > a {
 	padding: 15px 30px;
-	border-radius: 8px;
 	color: #fff;
-	text-decoration: none;
   font-size: 1.1rem;
 	font-weight: 600;
   position: relative;
@@ -220,6 +275,15 @@ font-weight: 100;
 }
 .contact-links > a:hover {
 	color: #666;
+}
+@media (480px >= width){
+.contact-links > a {
+	padding: 15px 10px;
+  font-size: 1rem;
+}
+.contact-links > a:not(:nth-child(3))::after{
+  height: 10px;
+}
 }
 /*문의하기*/
 .contact-section {
@@ -271,7 +335,28 @@ textarea {
 .contact-form button:hover {
 	background-color: #3c57e8;
 }
-
+@media (768px > width > 480px){
+.contact-section {
+	max-width: 460px;
+}
+.contact-box > .title {
+	font-size: 2rem;
+	margin: 30px 0;
+}
+}
+@media (480px >= width){
+.contact-section {
+	max-width: 350px;
+  	margin: 40px auto;
+}
+.contact-box > .title {
+	font-size: 1.5rem;
+	margin: 30px 0;
+}
+label {
+  font-size: 1rem;
+}
+}
 /*푸터*/
  .footer {
   width: 100%;

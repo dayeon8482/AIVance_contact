@@ -6,8 +6,3 @@ document.addEventListener("mousemove", (e) => {
     cursor.style.top = e.clientY + "px";
   }
 });
-
-function toggleMenu() {
-  const nav = document.querySelector("nav");
-  nav.classList.toggle("active");
-}
