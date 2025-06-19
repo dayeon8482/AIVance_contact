@@ -213,8 +213,12 @@ font-weight: 100;
   justify-content: center;
 }
 .intro-section> .intro-img{
+  width: 100%;
+  height: 100%;
   position: absolute;
   z-index: -1;
+}
+.intro-section> .intro-img>img{
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -262,7 +266,7 @@ font-weight: 100;
 .contact-links >a:first-child{
   color:#666;
 }
-.contact-links > a:not(:nth-child(3))::after{
+.contact-links > a:not(:last-child)::after{
   content: "";
   width:1px;
   height: 15px;
@@ -364,7 +368,7 @@ label {
     border-top: 1px solid rgba(255, 255, 255, 0.2);
   }
   .footer-container {
-    min-width: 1200px;
+    width:100%;
     height: 100%;
     margin: 0 auto;
     display: flex;
