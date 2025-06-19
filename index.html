@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>AIVance CEO 인사말</title>
+</head>
+<body>
+  <main>
+    <!--배경 구현-->
+    <div class="custom-cursor"></div>
+<div class="loader">
+<img src="./img/welcome.png" alt="Hello, welcom to AIVance" />
+</div>
+<header>
+	<div class="top-bar">
+		<a href="https://dayeon8482.github.io/AIVance/" class="logo"><img src="./img/AIVance.png" alt="AIVance logo"></a>
+		<button class="menu-toggle" onclick="toggleMenu()">☰</button>
+		<nav class="menu-wrap">
+			<ul class="menu">
+				<li>
+					<a href="#">회사 소개</a>
+					<ul class="submenu">
+						<li><a href="https://dayeon8482.github.io/AIVance_about/">AIVance 소개</a></li>
+						<li><a href="https://dayeon8482.github.io/AIVance_ceo/">CEO 인사말</a></li>
+						<li><a href="#">비전</a></li>
+						<li><a href="#">연혁</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">기술</a>
+					<ul class="submenu">
+						<li><a href="#">AI기술 소개</a></li>
+						<li><a href="#">보유 기술 특허</a></li>
+						<li><a href="#">기술 파트너십</a></li>
+						<li><a href="#">연구 개발 현황</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">성공 사례</a>
+					<ul class="submenu">
+						<li><a href="#">고객 사례</a></li>
+						<li><a href="#">산업별 적용 사례</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">뉴스</a>
+					<ul class="submenu">
+						<li><a href="#">보도자료</a></li>
+						<li><a href="#">공지사항</a></li>
+					</ul>
+				</li>
+				<li><a href="#">채용정보</a>
+				<ul class="submenu">
+						<li><a href="#">채용 공고</a></li>
+						<li><a href="#">인재상</a></li>
+						<li><a href="#">복지제도</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">문의</a>
+					<ul class="submenu">
+						<li><a href="#">기술지원요청</a></li>
+						<li><a href="#">파트너십 문의</a></li>
+						<li><a href="#">오시는 길</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+	</div>
+</header>
+
+<section class="intro-section">
+	<div class="intro-img">
+		<img src="./img/intro-background.jpg" alt="문의하기 서브 배경화면">
+	</div>
+	<h1 class="title">언제든지 편하게 문의해 주세요</h1>
+</section>
+<section class="contact-links-wrap">
+	<div class="contact-links">
+		<a href="#">기술 지원 요청</a>
+		<a href="#">파트너십 문의</a>
+		<a href="#">오시는 길</a>
+	</div>
+</section>
+<section class="contact-section">
+	<div class="contact-box">
+		<h2 class="title">문의 / 상담</h2>
+	<form class="contact-form">
+		<div class="form-group">
+			<label for="name">이름</label>
+			<input type="text" id="name" name="name" required />
+		</div>
+		<div class="form-group">
+			<label for="company">회사명</label>
+			<input type="text" id="company" name="company" />
+		</div>
+		<div class="form-group">
+			<label for="phone">전화번호</label>
+			<input type="tel" id="phone" name="phone" />
+		</div>
+		<div class="form-group">
+			<label for="email">이메일</label>
+			<input type="email" id="email" name="email" required />
+		</div>
+		<div class="form-group">
+			<label for="message">문의 내용</label>
+			<textarea id="message" name="message" rows="5" required></textarea>
+		</div>
+		<button type="submit">문의하기</button>
+	</form>
+	</div>
+</section>
+
+<!--푸터 구현 시작-->
+<footer class="footer">
+<section class="footer-container">
+      <nav class="footer-info">
+    <p>© 2025 AIVance. All rights reserved.</p>
+    <p>서울특별시 강남구 에이아이로 123, 10층</p>
+    <p>사업자등록번호 123-45-67890</p>
+      </nav>
+    <div class="footer-logo"><img src="./img/AIVance.png" alt="AIVance"></div>
+</section>
+</footer>
+</main>
+</body>
+<script src="./script/jquery-3.7.1.js"></script>
+<script src="./script/script.js"></script>
+</html>
